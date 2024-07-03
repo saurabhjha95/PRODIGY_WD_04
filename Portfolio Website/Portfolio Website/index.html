@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- HEADER -->
+
+      <nav id="header">
+        <div class="nav-logo">
+          <p class="nav-name">Saurabh Jha</p>
+        </div>
+        <div class="nav-menu" id="myNavMenu">
+          <ul class="nav_menu_list">
+            <li class="nav_list">
+              <a href="#home" class="nav-link active-link">Home</a>
+              <div class="circle"></div>
+            </li>
+            <li class="nav_list">
+              <a href="#about" class="nav-link">About</a>
+              <div class="circle"></div>
+            </li>
+            <li class="nav_list">
+              <a href="#projects" class="nav-link">Projects</a>
+              <div class="circle"></div>
+            </li>
+            <li class="nav_list">
+              <a href="#contact" class="nav-link">Contact</a>
+              <div class="circle"></div>
+            </li>
+          </ul>
+        </div>
+        <div class="nav-menu-btn">
+          <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+        </div>
+      </nav>
+
+      <!-- MAIN  -->
+      <main class="wrapper">
+        <!-- FEATURED SECTION-->
+        <section class="featured-box" id="home">
+          <div class="featured-text">
+            <div class="featured-text-card">
+              <span>Saurabh Jha</span>
+            </div>
+            <div class="featured-name">
+              <p>I'm <span class="typedText"></span></p>
+            </div>
+            <div class="featured-text-info">
+              <p>
+                Hi, I'm Saurabh Jha, a web developer with a BSc in IT. I
+                specialize in HTML, CSS, JavaScript, and React.js, and I'm
+                currently learning backend development. Welcome to my portfolio!
+              </p>
+            </div>
+            <div class="featured-text-btn">
+              <button class="btn" onclick="downloadResume()">
+                Download Resume <i class="uil uil-file-alt"></i>
+              </button>
+            </div>
+            <div class="social_icons">
+              <a href="#" class="icon"><i class="uil uil-instagram"></i></a>
+              <a
+                href="https://www.linkedin.com/in/saurabh-jha-57813b21a/"
+                class="icon"
+                ><i class="uil uil-linkedin-alt"></i
+              ></a>
+              <a
+                href="https://github.com/saurabhjha95?tab=repositories"
+                class="icon"
+                ><i class="uil uil-github-alt"></i
+              ></a>
+            </div>
+          </div>
+          <div class="featured-image">
+            <div class="image">
+              <img src="images/MyPhoto.jpg" alt="avatar" />
+            </div>
+          </div>
+          <div class="scroll-icon-box">
+            <a href="#about" class="scroll-btn">
+              <i class="uil uil-mouse-alt"></i>
+              <p>Scroll Down</p>
+            </a>
+          </div>
+        </section>
+
+        <!-- ABOUT SECTION-->
+        <section class="section" id="about">
+          <div class="top-header">
+            <h1>About Me</h1>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="about-info">
+                <h3>Introduction</h3>
+                <p>
+                  Hello! I'm Saurabh Jha, a passionate web developer with a BSc
+                  in IT and a knack for creating visually stunning and highly
+                  functional websites. With a strong foundation in frontend
+                  development, I specialize in HTML, CSS, JavaScript, and
+                  React.js to bring engaging user experiences to life.
+                  <br />
+                  <br />
+                  Currently, I'm diving deeper into backend development,
+                  broadening my skill set to become a well-rounded full-stack
+                  developer. My journey in web development is fueled by a love
+                  for coding and a constant desire to learn and innovate.
+                </p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="about-info">
+                <h3>Education</h3>
+                <span>MVLU College</span>
+                <span>BSC-IT</span>
+                <span>CGPA: 7.73</span>
+                <br />
+                <span>Bhavans College</span>
+                <span>H.S.C</span>
+                <span>61.69%</span>
+                <br />
+                <span>Shree Ghanshyamdas Poddar Vidyalaya</span>
+                <span>S.S.C</span>
+                <span>86.60%</span>
+              </div>
+            </div>
+            <div class="col">
+              <div class="skills-box">
+                <div class="skills-header">
+                  <h3>Skills</h3>
+                </div>
+                <div class="skills-list">
+                  <h4>Frontend:</h4>
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>Bootstrap</span>
+                  <span>JavaScript</span>
+                  <span>React JS</span>
+                </div>
+                <div class="skills-list">
+                  <h4>Backend:</h4>
+                  <span>Python</span>
+                </div>
+                <div class="skills-list">
+                  <h4>Database:</h4>
+                  <span>MySQL</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- PROJECT SECTION-->
+
+        <section class="section" id="projects">
+          <div class="top-header">
+            <h1>Projects</h1>
+          </div>
+          <div class="project-container">
+            <div class="project-box">
+              <img
+                src="images/landing_page.png"
+                alt="Screenshot of Responsive Landing Page"
+              />
+              <div class="overlay">
+                <h3>Responsive Landing Page</h3>
+                <label>Made in HTML, CSS, JavaScript</label>
+                <div class="buttons">
+                  <a href="https://trendnest1.netlify.app/" target="_blank"
+                    >View Live</a
+                  >
+                  <a
+                    href="https://github.com/saurabhjha95/PRODIGY_WD_01/tree/main/LandingPage"
+                    target="_blank"
+                    >GitHub</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="project-box">
+              <img src="images/stopwatch.png" alt="Screenshot of Stopwatch" />
+              <div class="overlay">
+                <h3>Stopwatch</h3>
+                <label>Made in HTML, CSS, JavaScript</label>
+                <div class="buttons">
+                  <a href="https://stopwatchhere.netlify.app/" target="_blank"
+                    >View Live</a
+                  >
+                  <a
+                    href="https://github.com/saurabhjha95/PRODIGY_WD_02/tree/main/Stopwatch%20Web%20Application"
+                    target="_blank"
+                    >GitHub</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="project-box">
+              <img
+                src="images/tic-tac-toe.png"
+                alt="Screenshot of Tic-Tac-Toe Web App"
+              />
+              <div class="overlay">
+                <h3>Tic-Tac-Toe Web App</h3>
+                <label>Made in HTML, CSS, JavaScript</label>
+                <div class="buttons">
+                  <a
+                    href="https://tictactoeplayhere.netlify.app/"
+                    target="_blank"
+                    >View Live</a
+                  >
+                  <a
+                    href="https://github.com/saurabhjha95/PRODIGY_WD_03/tree/main/Tic-Tac-Toe%20Web%20application"
+                    target="_blank"
+                    >GitHub</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="project-box">
+              <img
+                src="images/portfolio.png"
+                alt="Screenshot of Portfolio Website"
+              />
+              <div class="overlay">
+                <h3>Portfolio Website</h3>
+                <label>Made in HTML, CSS, JavaScript</label>
+                <div class="buttons">
+                  <a href="https://portfoliosj1.netlify.app/" target="_blank"
+                    >View Live</a
+                  >
+                  <a href="" target="_blank">GitHub</a>
+                </div>
+              </div>
+            </div>
+            <div class="project-box">
+              <img
+                src="images/weatherapp.png"
+                alt="Screenshot of Weather App"
+              />
+              <div class="overlay">
+                <h3>Weather App</h3>
+                <label>Made in React JS</label>
+                <div class="buttons">
+                  <a href="https://getweatherinf.netlify.app/" target="_blank"
+                    >View Live</a
+                  >
+                  <a
+                    href="https://github.com/saurabhjha95/PRODIGY_WD_05"
+                    target="_blank"
+                    >GitHub</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="project-box">
+              <img src="images/Shopy.png" alt="Screenshot of Shopy" />
+              <div class="overlay">
+                <h3>Shopy Website</h3>
+                <label>Made in React JS</label>
+                <div class="buttons">
+                  <a href="#" target="_blank">View Live</a>
+                  <a href="#" target="_blank">GitHub</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+
+        <section class="section" id="contact">
+          <div class="top-header">
+            <h1>Contact Me</h1>
+          </div>
+          <div class="row">
+            <form action="https://formspree.io/f/xnnaqnae" method="POST">
+              <div class="form-control">
+                <div class="form-inputs">
+                  <input
+                    type="text"
+                    class="input-field"
+                    name="name"
+                    placeholder="Name"
+                    required
+                  />
+                  <input
+                    type="email"
+                    class="input-field"
+                    name="_replyto"
+                    placeholder="Email"
+                    required
+                  />
+                </div>
+                <div class="text-area">
+                  <textarea
+                    name="message"
+                    placeholder="Message"
+                    required
+                  ></textarea>
+                </div>
+                <div class="form-button">
+                  <button type="submit" class="btn">
+                    Send <i class="uil uil-message"></i>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </section>
+      </main>
+
+      <!-- FOOTER -->
+      <footer>
+        <div class="top-footer">
+          <p>Saurabh Jha.</p>
+        </div>
+        <div class="middle-footer">
+          <ul class="footer-menu">
+            <li class="footer_menu_list">
+              <a href="#home">Home</a>
+            </li>
+            <li class="footer_menu_list">
+              <a href="#about">About</a>
+            </li>
+            <li class="footer_menu_list">
+              <a href="#projects">Projects</a>
+            </li>
+            <li class="footer_menu_list">
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-social-icons">
+          <a href="#" class="icon"><i class="uil uil-instagram"></i></a>
+          <a
+            href="https://www.linkedin.com/in/saurabh-jha-57813b21a/"
+            class="icon"
+            ><i class="uil uil-linkedin-alt"></i
+          ></a>
+          <a
+            href="https://github.com/saurabhjha95?tab=repositories"
+            class="icon"
+            ><i class="uil uil-github-alt"></i
+          ></a>
+        </div>
+        <div class="bottom-footer">
+          <p>
+            Copyright &copy;
+            <a href="#home" style="text-decoration: none">Saurabh Jha</a> - All
+            rights reserved.
+          </p>
+        </div>
+      </footer>
+    </div>
+
+    <!-- TYPING JS Link  -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!-- SCROLL REVEAL JS Link -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
